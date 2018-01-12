@@ -96,7 +96,7 @@ module.exports = class tidex extends liqui {
                 },
                 'limits': {
                     'amount': {
-                        'min': currency['minAmountTrade'],
+                        'min': Math.pow (10, -precision),
                         'max': Math.pow (10, precision),
                     },
                     'price': {
